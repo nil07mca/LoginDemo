@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0b6443ee3abbda3d62f2b76c /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = c5c4f78c4ece9e3ceb9d11dc /* CFNetwork.framework */; };
+		22a846f333c80d38f48624de /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2867E0CC1BBCFB88007F3875 /* LaunchScreen.xib */; };
+		2867E0C01BBCFB88007F3875 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0BF1BBCFB88007F3875 /* main.m */; };
+		2867E0C31BBCFB88007F3875 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0C21BBCFB88007F3875 /* AppDelegate.m */; };
+		2867E0C61BBCFB88007F3875 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0C51BBCFB88007F3875 /* ViewController.m */; };
+		2867E0C91BBCFB88007F3875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2867E0C71BBCFB88007F3875 /* Main.storyboard */; };
+		2867E0CB1BBCFB88007F3875 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2867E0CA1BBCFB88007F3875 /* Images.xcassets */; };
+		2867E0CE1BBCFB88007F3875 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2867E0CC1BBCFB88007F3875 /* LaunchScreen.xib */; };
+		2867E0DA1BBCFB89007F3875 /* LoginDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0D91BBCFB89007F3875 /* LoginDemoTests.m */; };
+		2867E0E51BBD1994007F3875 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0E41BBD1994007F3875 /* Presenter.m */; };
+		2867E0E91BBD19C1007F3875 /* LoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0E81BBD19C1007F3875 /* LoginPresenter.m */; };
+		2867E0ED1BBD1AFB007F3875 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0EC1BBD1AFB007F3875 /* User.m */; };
+		2867E0F01BBD1D60007F3875 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0EF1BBD1D60007F3875 /* LoginViewController.m */; };
+		2867E0F41BBD1D8B007F3875 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0F31BBD1D8B007F3875 /* HomeViewController.m */; };
+		2867E0FE1BBD352B007F3875 /* LoginRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0FD1BBD352B007F3875 /* LoginRepository.m */; };
+		2867E1011BBD4A28007F3875 /* HomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E1001BBD4A28007F3875 /* HomePresenter.m */; };
+		2867E1051BBD53BE007F3875 /* LoginTimerApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E1031BBD53BE007F3875 /* LoginTimerApplication.m */; };
+		37ee101cb733485f21523411 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0EF1BBD1D60007F3875 /* LoginViewController.m */; };
+		4ab54d766ad66f9ffc590523 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0E41BBD1994007F3875 /* Presenter.m */; };
+		5325151fef8361c7e0d7b38a /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37239def4fccff702c45d804 /* calabash.framework */; };
+		82D45A7F1BBD57F200AF3947 /* my_first.feature in Resources */ = {isa = PBXBuildFile; fileRef = 82D45A771BBD57F200AF3947 /* my_first.feature */; };
+		82D45A801BBD57F200AF3947 /* calabash_steps.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D45A791BBD57F200AF3947 /* calabash_steps.rb */; };
+		82D45A811BBD57F200AF3947 /* my_first_steps.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D45A7A1BBD57F200AF3947 /* my_first_steps.rb */; };
+		82D45A821BBD57F200AF3947 /* 01_launch.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D45A7C1BBD57F200AF3947 /* 01_launch.rb */; };
+		82D45A831BBD57F200AF3947 /* 02_pre_stop_hooks.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D45A7D1BBD57F200AF3947 /* 02_pre_stop_hooks.rb */; };
+		82D45A841BBD57F200AF3947 /* env.rb in Resources */ = {isa = PBXBuildFile; fileRef = 82D45A7E1BBD57F200AF3947 /* env.rb */; };
+		8bc1031c95fc910654539da1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2867E0CA1BBCFB88007F3875 /* Images.xcassets */; };
+		9074440a2a08cdb8f9cd5681 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0F31BBD1D8B007F3875 /* HomeViewController.m */; };
+		a4dde92a985c47a74f6ad716 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0C51BBCFB88007F3875 /* ViewController.m */; };
+		a5fa6120d87f10383a9d0d49 /* LoginTimerApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E1031BBD53BE007F3875 /* LoginTimerApplication.m */; };
+		af2a8280028cf43b92a10425 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2867E0C71BBCFB88007F3875 /* Main.storyboard */; };
+		b6a32556472de3cd6f329ae3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0C21BBCFB88007F3875 /* AppDelegate.m */; };
+		c2de897718f7fdcd1070a4ff /* HomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E1001BBD4A28007F3875 /* HomePresenter.m */; };
+		e133477a2ade1250e6805937 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0BF1BBCFB88007F3875 /* main.m */; };
+		f173efa8a83bb1a2ac1a05ce /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0EC1BBD1AFB007F3875 /* User.m */; };
+		faf707f950fa301c6907258e /* LoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0E81BBD19C1007F3875 /* LoginPresenter.m */; };
+		fe24a3b4e39f5662e0f95401 /* LoginRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = 2867E0FD1BBD352B007F3875 /* LoginRepository.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2867E0D41BBCFB88007F3875 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2867E0B21BBCFB88007F3875 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2867E0B91BBCFB88007F3875;
+			remoteInfo = LoginDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2867E0BA1BBCFB88007F3875 /* LoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2867E0BE1BBCFB88007F3875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2867E0BF1BBCFB88007F3875 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2867E0C11BBCFB88007F3875 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2867E0C21BBCFB88007F3875 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2867E0C41BBCFB88007F3875 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2867E0C51BBCFB88007F3875 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2867E0C81BBCFB88007F3875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2867E0CA1BBCFB88007F3875 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2867E0CD1BBCFB88007F3875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2867E0D31BBCFB88007F3875 /* LoginDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2867E0D81BBCFB88007F3875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2867E0D91BBCFB89007F3875 /* LoginDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginDemoTests.m; sourceTree = "<group>"; };
+		2867E0E31BBD1994007F3875 /* Presenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		2867E0E41BBD1994007F3875 /* Presenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
+		2867E0E71BBD19C1007F3875 /* LoginPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginPresenter.h; sourceTree = "<group>"; };
+		2867E0E81BBD19C1007F3875 /* LoginPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginPresenter.m; sourceTree = "<group>"; };
+		2867E0EB1BBD1AFB007F3875 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		2867E0EC1BBD1AFB007F3875 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		2867E0EE1BBD1D60007F3875 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		2867E0EF1BBD1D60007F3875 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		2867E0F21BBD1D8B007F3875 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		2867E0F31BBD1D8B007F3875 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		2867E0F91BBD33AE007F3875 /* ILoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILoginView.h; sourceTree = "<group>"; };
+		2867E0FB1BBD34E1007F3875 /* ILoginRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILoginRepository.h; sourceTree = "<group>"; };
+		2867E0FC1BBD352B007F3875 /* LoginRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginRepository.h; sourceTree = "<group>"; };
+		2867E0FD1BBD352B007F3875 /* LoginRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginRepository.m; sourceTree = "<group>"; };
+		2867E0FF1BBD4A28007F3875 /* HomePresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePresenter.h; sourceTree = "<group>"; };
+		2867E1001BBD4A28007F3875 /* HomePresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePresenter.m; sourceTree = "<group>"; };
+		2867E1021BBD4A4F007F3875 /* IHomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHomeView.h; sourceTree = "<group>"; };
+		2867E1031BBD53BE007F3875 /* LoginTimerApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTimerApplication.m; sourceTree = "<group>"; };
+		2867E1041BBD53BE007F3875 /* LoginTimerApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginTimerApplication.h; sourceTree = "<group>"; };
+		37239def4fccff702c45d804 /* calabash.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
+		82D45A751BBD57B200AF3947 /* LoginDemo-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoginDemo-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D45A771BBD57F200AF3947 /* my_first.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = my_first.feature; sourceTree = "<group>"; };
+		82D45A791BBD57F200AF3947 /* calabash_steps.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = calabash_steps.rb; sourceTree = "<group>"; };
+		82D45A7A1BBD57F200AF3947 /* my_first_steps.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = my_first_steps.rb; sourceTree = "<group>"; };
+		82D45A7C1BBD57F200AF3947 /* 01_launch.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = 01_launch.rb; sourceTree = "<group>"; };
+		82D45A7D1BBD57F200AF3947 /* 02_pre_stop_hooks.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = 02_pre_stop_hooks.rb; sourceTree = "<group>"; };
+		82D45A7E1BBD57F200AF3947 /* env.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = env.rb; sourceTree = "<group>"; };
+		82D45A851BBD5F6600AF3947 /* iWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iWelcomeView.h; sourceTree = "<group>"; };
+		c5c4f78c4ece9e3ceb9d11dc /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0f68aa6a0f00d8e42ac57210 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0b6443ee3abbda3d62f2b76c /* CFNetwork.framework in Frameworks */,
+				5325151fef8361c7e0d7b38a /* calabash.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2867E0B71BBCFB88007F3875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2867E0D01BBCFB88007F3875 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2867E0B11BBCFB88007F3875 = {
+			isa = PBXGroup;
+			children = (
+				82D45A761BBD57F200AF3947 /* features */,
+				82D45A741BBD578F00AF3947 /* Frameworks */,
+				2867E0BC1BBCFB88007F3875 /* LoginDemo */,
+				2867E0D61BBCFB88007F3875 /* LoginDemoTests */,
+				2867E0BB1BBCFB88007F3875 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2867E0BB1BBCFB88007F3875 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2867E0BA1BBCFB88007F3875 /* LoginDemo.app */,
+				2867E0D31BBCFB88007F3875 /* LoginDemoTests.xctest */,
+				82D45A751BBD57B200AF3947 /* LoginDemo-cal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2867E0BC1BBCFB88007F3875 /* LoginDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2867E0FA1BBD34A2007F3875 /* Repositories */,
+				2867E0F81BBD254D007F3875 /* View */,
+				2867E0F11BBD1D67007F3875 /* View Controllers */,
+				2867E0EA1BBD1ACF007F3875 /* Model */,
+				2867E0E61BBD199F007F3875 /* Presenter */,
+				2867E0C11BBCFB88007F3875 /* AppDelegate.h */,
+				2867E0C21BBCFB88007F3875 /* AppDelegate.m */,
+				2867E0C71BBCFB88007F3875 /* Main.storyboard */,
+				2867E0CA1BBCFB88007F3875 /* Images.xcassets */,
+				2867E0CC1BBCFB88007F3875 /* LaunchScreen.xib */,
+				2867E0BD1BBCFB88007F3875 /* Supporting Files */,
+			);
+			path = LoginDemo;
+			sourceTree = "<group>";
+		};
+		2867E0BD1BBCFB88007F3875 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2867E1031BBD53BE007F3875 /* LoginTimerApplication.m */,
+				2867E1041BBD53BE007F3875 /* LoginTimerApplication.h */,
+				2867E0BE1BBCFB88007F3875 /* Info.plist */,
+				2867E0BF1BBCFB88007F3875 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2867E0D61BBCFB88007F3875 /* LoginDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				2867E0D91BBCFB89007F3875 /* LoginDemoTests.m */,
+				2867E0D71BBCFB88007F3875 /* Supporting Files */,
+			);
+			path = LoginDemoTests;
+			sourceTree = "<group>";
+		};
+		2867E0D71BBCFB88007F3875 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2867E0D81BBCFB88007F3875 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2867E0E61BBD199F007F3875 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2867E0E31BBD1994007F3875 /* Presenter.h */,
+				2867E0E41BBD1994007F3875 /* Presenter.m */,
+				2867E0E71BBD19C1007F3875 /* LoginPresenter.h */,
+				2867E0E81BBD19C1007F3875 /* LoginPresenter.m */,
+				2867E0FF1BBD4A28007F3875 /* HomePresenter.h */,
+				2867E1001BBD4A28007F3875 /* HomePresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		2867E0EA1BBD1ACF007F3875 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2867E0EB1BBD1AFB007F3875 /* User.h */,
+				2867E0EC1BBD1AFB007F3875 /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2867E0F11BBD1D67007F3875 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2867E0EE1BBD1D60007F3875 /* LoginViewController.h */,
+				2867E0EF1BBD1D60007F3875 /* LoginViewController.m */,
+				2867E0C41BBCFB88007F3875 /* ViewController.h */,
+				2867E0C51BBCFB88007F3875 /* ViewController.m */,
+				2867E0F21BBD1D8B007F3875 /* HomeViewController.h */,
+				2867E0F31BBD1D8B007F3875 /* HomeViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2867E0F81BBD254D007F3875 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2867E0F91BBD33AE007F3875 /* ILoginView.h */,
+				2867E1021BBD4A4F007F3875 /* IHomeView.h */,
+				82D45A851BBD5F6600AF3947 /* iWelcomeView.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2867E0FA1BBD34A2007F3875 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				2867E0FB1BBD34E1007F3875 /* ILoginRepository.h */,
+				2867E0FC1BBD352B007F3875 /* LoginRepository.h */,
+				2867E0FD1BBD352B007F3875 /* LoginRepository.m */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		82D45A741BBD578F00AF3947 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				c5c4f78c4ece9e3ceb9d11dc /* CFNetwork.framework */,
+				37239def4fccff702c45d804 /* calabash.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		82D45A761BBD57F200AF3947 /* features */ = {
+			isa = PBXGroup;
+			children = (
+				82D45A771BBD57F200AF3947 /* my_first.feature */,
+				82D45A781BBD57F200AF3947 /* step_definitions */,
+				82D45A7B1BBD57F200AF3947 /* support */,
+			);
+			path = features;
+			sourceTree = "<group>";
+		};
+		82D45A781BBD57F200AF3947 /* step_definitions */ = {
+			isa = PBXGroup;
+			children = (
+				82D45A791BBD57F200AF3947 /* calabash_steps.rb */,
+				82D45A7A1BBD57F200AF3947 /* my_first_steps.rb */,
+			);
+			path = step_definitions;
+			sourceTree = "<group>";
+		};
+		82D45A7B1BBD57F200AF3947 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				82D45A7C1BBD57F200AF3947 /* 01_launch.rb */,
+				82D45A7D1BBD57F200AF3947 /* 02_pre_stop_hooks.rb */,
+				82D45A7E1BBD57F200AF3947 /* env.rb */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2867E0B91BBCFB88007F3875 /* LoginDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2867E0DD1BBCFB89007F3875 /* Build configuration list for PBXNativeTarget "LoginDemo" */;
+			buildPhases = (
+				2867E0B61BBCFB88007F3875 /* Sources */,
+				2867E0B71BBCFB88007F3875 /* Frameworks */,
+				2867E0B81BBCFB88007F3875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginDemo;
+			productName = LoginDemo;
+			productReference = 2867E0BA1BBCFB88007F3875 /* LoginDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2867E0D21BBCFB88007F3875 /* LoginDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2867E0E01BBCFB89007F3875 /* Build configuration list for PBXNativeTarget "LoginDemoTests" */;
+			buildPhases = (
+				2867E0CF1BBCFB88007F3875 /* Sources */,
+				2867E0D01BBCFB88007F3875 /* Frameworks */,
+				2867E0D11BBCFB88007F3875 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2867E0D51BBCFB88007F3875 /* PBXTargetDependency */,
+			);
+			name = LoginDemoTests;
+			productName = LoginDemoTests;
+			productReference = 2867E0D31BBCFB88007F3875 /* LoginDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		e88d9b160e6f025bce223608 /* LoginDemo-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4553de132f737f80ae6414ad /* Build configuration list for PBXNativeTarget "LoginDemo-cal" */;
+			buildPhases = (
+				75567981d7d209a80acaf0e7 /* Sources */,
+				0f68aa6a0f00d8e42ac57210 /* Frameworks */,
+				d7847fbab99ff4104229cc19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LoginDemo-cal";
+			productName = "LoginDemo-cal";
+			productReference = 82D45A751BBD57B200AF3947 /* LoginDemo-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2867E0B21BBCFB88007F3875 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = cts;
+				TargetAttributes = {
+					2867E0B91BBCFB88007F3875 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					2867E0D21BBCFB88007F3875 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 2867E0B91BBCFB88007F3875;
+					};
+				};
+			};
+			buildConfigurationList = 2867E0B51BBCFB88007F3875 /* Build configuration list for PBXProject "LoginDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2867E0B11BBCFB88007F3875;
+			productRefGroup = 2867E0BB1BBCFB88007F3875 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2867E0B91BBCFB88007F3875 /* LoginDemo */,
+				2867E0D21BBCFB88007F3875 /* LoginDemoTests */,
+				e88d9b160e6f025bce223608 /* LoginDemo-cal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2867E0B81BBCFB88007F3875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2867E0C91BBCFB88007F3875 /* Main.storyboard in Resources */,
+				2867E0CE1BBCFB88007F3875 /* LaunchScreen.xib in Resources */,
+				2867E0CB1BBCFB88007F3875 /* Images.xcassets in Resources */,
+				82D45A7F1BBD57F200AF3947 /* my_first.feature in Resources */,
+				82D45A841BBD57F200AF3947 /* env.rb in Resources */,
+				82D45A821BBD57F200AF3947 /* 01_launch.rb in Resources */,
+				82D45A811BBD57F200AF3947 /* my_first_steps.rb in Resources */,
+				82D45A831BBD57F200AF3947 /* 02_pre_stop_hooks.rb in Resources */,
+				82D45A801BBD57F200AF3947 /* calabash_steps.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2867E0D11BBCFB88007F3875 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		d7847fbab99ff4104229cc19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				af2a8280028cf43b92a10425 /* Main.storyboard in Resources */,
+				22a846f333c80d38f48624de /* LaunchScreen.xib in Resources */,
+				8bc1031c95fc910654539da1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2867E0B61BBCFB88007F3875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2867E0FE1BBD352B007F3875 /* LoginRepository.m in Sources */,
+				2867E0C61BBCFB88007F3875 /* ViewController.m in Sources */,
+				2867E0C31BBCFB88007F3875 /* AppDelegate.m in Sources */,
+				2867E0ED1BBD1AFB007F3875 /* User.m in Sources */,
+				2867E0E51BBD1994007F3875 /* Presenter.m in Sources */,
+				2867E0F01BBD1D60007F3875 /* LoginViewController.m in Sources */,
+				2867E1051BBD53BE007F3875 /* LoginTimerApplication.m in Sources */,
+				2867E0C01BBCFB88007F3875 /* main.m in Sources */,
+				2867E1011BBD4A28007F3875 /* HomePresenter.m in Sources */,
+				2867E0E91BBD19C1007F3875 /* LoginPresenter.m in Sources */,
+				2867E0F41BBD1D8B007F3875 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2867E0CF1BBCFB88007F3875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2867E0DA1BBCFB89007F3875 /* LoginDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75567981d7d209a80acaf0e7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				fe24a3b4e39f5662e0f95401 /* LoginRepository.m in Sources */,
+				a4dde92a985c47a74f6ad716 /* ViewController.m in Sources */,
+				b6a32556472de3cd6f329ae3 /* AppDelegate.m in Sources */,
+				f173efa8a83bb1a2ac1a05ce /* User.m in Sources */,
+				4ab54d766ad66f9ffc590523 /* Presenter.m in Sources */,
+				37ee101cb733485f21523411 /* LoginViewController.m in Sources */,
+				a5fa6120d87f10383a9d0d49 /* LoginTimerApplication.m in Sources */,
+				e133477a2ade1250e6805937 /* main.m in Sources */,
+				c2de897718f7fdcd1070a4ff /* HomePresenter.m in Sources */,
+				faf707f950fa301c6907258e /* LoginPresenter.m in Sources */,
+				9074440a2a08cdb8f9cd5681 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2867E0D51BBCFB88007F3875 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2867E0B91BBCFB88007F3875 /* LoginDemo */;
+			targetProxy = 2867E0D41BBCFB88007F3875 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2867E0C71BBCFB88007F3875 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2867E0C81BBCFB88007F3875 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2867E0CC1BBCFB88007F3875 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2867E0CD1BBCFB88007F3875 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2867E0DB1BBCFB89007F3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2867E0DC1BBCFB89007F3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2867E0DE1BBCFB89007F3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LoginDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2867E0DF1BBCFB89007F3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LoginDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2867E0E11BBCFB89007F3875 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LoginDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginDemo.app/LoginDemo";
+			};
+			name = Debug;
+		};
+		2867E0E21BBCFB89007F3875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LoginDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginDemo.app/LoginDemo";
+			};
+			name = Release;
+		};
+		7c0f58b066a8e9b5095d76b7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				INFOPLIST_FILE = LoginDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		f4280241a1d5f474d2172f3f /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				INFOPLIST_FILE = LoginDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-force_load",
+					"\"$(SRCROOT)/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2867E0B51BBCFB88007F3875 /* Build configuration list for PBXProject "LoginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2867E0DB1BBCFB89007F3875 /* Debug */,
+				2867E0DC1BBCFB89007F3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2867E0DD1BBCFB89007F3875 /* Build configuration list for PBXNativeTarget "LoginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2867E0DE1BBCFB89007F3875 /* Debug */,
+				2867E0DF1BBCFB89007F3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2867E0E01BBCFB89007F3875 /* Build configuration list for PBXNativeTarget "LoginDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2867E0E11BBCFB89007F3875 /* Debug */,
+				2867E0E21BBCFB89007F3875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4553de132f737f80ae6414ad /* Build configuration list for PBXNativeTarget "LoginDemo-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				f4280241a1d5f474d2172f3f /* Debug */,
+				7c0f58b066a8e9b5095d76b7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2867E0B21BBCFB88007F3875 /* Project object */;
+}
